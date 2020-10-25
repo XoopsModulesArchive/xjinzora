@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<mosinstall type="component">
+	<name>Jinzora</name>
+	<creationDate>04.12.2004</creationDate>
+	<author>Ross Carlson</author>
+	<copyright>This component is released under the GNU/GPL License</copyright>
+	<authorEmail>ross@jinzora.org</authorEmail>
+	<authorUrl>www.jinzora.org</authorUrl>
+	<version>1.0</version>
+	<description>Jinzora is a Web based Media Jukebox</description>
+	<files>
+		<filename>INSTALL.txt</filename>
+	</files>
+	
+	<administration>
+		<menu>Jinzora</menu>
+		<submenu></submenu>
+	</administration>
+</mosinstall>

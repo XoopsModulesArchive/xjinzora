@@ -1,0 +1,2 @@
+This is the sample, site description file.<br>
+It is located in the root of the Media directory "music" by default.<br>This text will only be seen on the start screen<br>HTML is als ok here.

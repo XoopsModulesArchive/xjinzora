@@ -1,0 +1,1 @@
+This is the footer file.<br>It will be seen site wide and is located in the root of your media directory ('music' by default).<br>You can even include <strong>HTML</strong> if you wish

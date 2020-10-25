@@ -1,0 +1,90 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* JINZORA
+*
+* Jinzora is a graphical interface to your MP3 collection, a personal
+* jukebox, an MP3 streamer.  It is similar to Andromeda, and was originaly 
+* a port of the Zina project (http://www.pancake.org/jinzora.html) but has been
+* re-written from almost the groud up to add many new features 
+* and to make it easier to use.  It is released under the GNU GPL.
+* 
+* Jinzora Author:
+* Ross Carlson: ross@jasbone.com
+* http://www.jasbone.com/jinzora
+* Support: http://www.jinzora.org/modules.php?op=modload&name=XForum&file=index
+* Downloads: http://www.jinzora.org/modules.php?op=modload&name=jz_download&file=index
+* License: GNU GPL <http://www.gnu.org/copyleft/gpl.html>
+* 
+* Contributors:
+* Please see http://www.jinzora.org/modules.php?op=modload&name=jz_whois&file=index
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+NEW INSTALLS (Standalone) - for CMS please see the online docs
+-----------------------------------------------------------------------------------
+# Download
+Seems pretty simple, but it's worth stating. First you've got to download Jinzora. You can get Jinzora from the following
+
+Jinzora Downloads Page
+
+We suggest that you create a "jinzora" directory to save your download to so you can extract it next
+
+
+# Extracting
+Once you've got Jinzora downloaded you'll need to extract the download to your web server.
+
+Windows: On Windows we recommend using Winzip to extract the downloaded .zip file (assuming that's the file you downloaded).
+
+*NIX: On *NIX you'll need to do a: tar -zxvf jinzora-X.X.tar.gz (where X.X is the version number) to extract Jinzora to the current directory
+
+Note: Jinzora WILL create a subdirectory called "jinzora"
+
+
+# Preparing
+Windows Users: You MUST make sure that the jinzora directory from above is located with in your webserver's root directory (c:\inetpub\www by default). Virtual directories are NOT currently supported (support is planned for the future). You can have your media on a different drive IF and ONLY IF you are using NTFS (see symlinking in Using Jinzora)
+You also need to make sure that the webserver has at least read access to the directory you've extracted Jinzora to (which it should unless you've changed things...)
+
+*NIX Users: To make installing Jinzora on *NIX easier (and for those that have SSH access) we've provided a script that will setup everything for Jinzora's installation. Please simply run:
+
+sh configure.sh
+
+FTP Only Installtations: If you do not have SSH access and only have FTP access (or similar) please see "FTP Only" installation in the menu for details.
+
+Inside the Jinzora directory. This will create the necessary files and setup the proper permissions so the web based portion of the installation can complete (if you don't have SSH access don't worry, see FTP Only installation for assistance)
+
+
+# GD Libraries
+To take advantage of the image resizing functions in Jinzora you'll need the Boutell.com GD image libraries. To install these (these are ROUGH guidelines)
+
+Windows Users:
+1. Download the GD Library from us (or get it on the net...)
+
+2. Unzip it to the exact same directory where PHP is installed (c:\php)
+
+3. Edit php.ini (usually in c:\winnt or c:\windows) and edit the following line:
+extension=php_gd2.dll (REMOVE the ; at the beginning of the line)
+
+*NIX Users: This can be a bit more complicated on *NIX, so we recommend you view the installation guide located at Boutell.com for assistance
+
+
+# Web Installer
+Now that you've gotten everything ready, browse (in your favorite web browser) to
+
+http://yoursite/path/to/jinzora/index.php
+
+And you'll be taken through the web based installer. The web based installer is fully documented and should describe each option that you'll have along the way.
+
+At the very end the installer will create two files for you. The files settings.php and users.php will be generated, and if possible, be written to the server for you. If the installer can't write these files you'll be able to download them manually. You'll need to upload these 2 files to the root directory of the Jinzora installation. Once you've uploaded these files you'll be able to go to the index page for Jinzora.
+
+
+
+UPGRADING
+-----------------------------------------------------------------------------------
+Upgrades should be very simple.  All you need to do is extract Jinzora on
+top of your current install and replace everything.  Your settings file
+will not be overwritten and the installer will allow you to "Upgrade" your
+installation and migrate all your settings in.
+
+Be aware that if you are using the default "music" directory that it WILL
+be overwritten when you upgrade.  We suggest that you either backup this directory
+or even better create a "my-music" directory and use that as your media
+directory in your settings.php file

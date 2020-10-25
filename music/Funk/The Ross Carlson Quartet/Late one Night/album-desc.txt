@@ -1,0 +1,1 @@
+This is part of a small demo album we did to help us get some gigs.  Obviously it didn't work, or we'd all be rich musicians and you wouldn't be reading this!<br><br>This the description for the album, and it can be edited (when logged in as admin) by selecting "Media Management" - "Item Information"

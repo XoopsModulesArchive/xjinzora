@@ -1,0 +1,375 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* JINZORA
+* (Jinzora Is Not Zina OR Andromeda)
+*
+* Jinzora is a graphical interface to your MP3 collection, a personal
+* jukebox, an MP3 streamer.  It is similar to Andromeda, and was originaly 
+* a port of the Zina project (http://www.pancake.org/jinzora.html) but has been
+* re-written from almost the groud up to add many new features 
+* and to make it easier to use.  It is released under the GNU GPL.
+* 
+* Jinzora Author:
+* Ross Carlson: ross@jasbone.com
+* http://www.jasbone.com/jinzora
+* Support: http://www.jinzora.org/modules.php?op=modload&name=XForum&file=index
+* Downloads: http://www.jinzora.org/modules.php?op=modload&name=jz_download&file=index
+* License: GNU GPL <http://www.gnu.org/copyleft/gpl.html>
+* 
+* Contributors:
+* Please see http://www.jinzora.org/modules.php?op=modload&name=jz_whois&file=index
+*
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+Jinzora 1.0
+
+* SEC: Big Security Fix! Now when on the login screen you can not see the header drop downs until logged in (sorry about that one!)
+* NEW: Big Addition! Added an embedded WMP option - now media is played in a embedded player rather than streamed (see docs for details)!!!
+* NEW: Big Addition! Added a new Java Applet for file uploads, VERY SLICK! Many thanks to Laurent on this one!!!
+* NEW: Big Addition! Playlists generation is now linked directly to playlists.php file for much better playlist generation - HUGE for Mambo
+* NEW: Big Addition! Added "Slimzora" - A "slim" interface for Jinzora with stripped down functionality
+* NEW: Big Addition! Added full support for the MDPro CMS
+* NEW: Big Addition! Added full support for the CPGNuke CMS
+* NEW: Big Addition! You can now click on Aritsts or Albums in the header to view a search page to search by alpha/letter!
+* NEW: Big Addition! Added a "Barge" feature to Jukebox, now you can insert media at the current location in the playlist without recreating the playlist!
+* NEW: Big Addition! Added a complete playlist view to Jukebox mode, including the ability to jump to any track in the list!
+* NEW: Big Addition! Added some new bulk editing tools to make filename management easier!
+* NEW: Big Addition! Added a Lo-Fi track display and user type!
+* NEW: Big Addition! Added the ability to add track thumbnails
+* NEW: Big Addition! Added a new Search for New Media tool - shows all your newly added stuff!
+* NEW: Big Addition! Added download counting - tracks each time an item is downloaded
+* NEW: You can now use the toptracks.php file standalone by adding ?standalone=true in the URL field
+* NEW: Added the ability to put a footer.txt file to be displayed in the footer - just like the header.txt file
+* NEW: You can now disable all play icons everyone except for tracks (better for public sites where artist plays aren't valid)
+* NEW: You can now easily exclude items from the info pages (and unhide from the menus)
+* NEW: Added the display of the file date to the track info page
+* NEW: Now sub item numbers are shown in the header (if turned on)
+* NEW: You can now disable the random play icons and set it so you can decide who can see the info links (admins or all)
+* NEW: Much better support for .rm files
+* NEW: You can now set "all" as an audio_type to display "all" items in a directory unfiltered
+* NEW: Now when the language is changed on the fly the docs will change to that language as well (if they exist, English if not)
+* NEW: You can now completely disable playlists
+* NEW: Major performance updates for XMMS based Jukebox mode - only reads the bare minium of data once to make it faster
+* NEW: You can specify how many columns the album art is displayed in
+* BUG: Fixed an issue when viewing items with sub folders in 1 dir mode
+* BUG: When you change the theme on the fly the popup pages will change too
+* BUG: Fixed an issue with the getID3 classes dying on bad ID3v2 tags - MANY thanks to Allan at getID3.org!!!
+* BUG: Fixed the login issue with CMS mode where you would see "You have no access" but then get access
+* BUG: Fixed playback of .rm files - single files only for now...
+* BUG: Fixed some issues with playlist generation (for stored playlists)
+* BUG: Fixed a bug where ID3 comments are displayed when they shouldn't be
+* BUG: Fixed an issue with the display of artist/album info in top tracks/highest rated
+* BUG: Fixed an issue with ID3 updating of a single album
+* BUG: Fixed a bug with the display of .lyrics files
+* BUG: Fixed many bugs with the menu system when there are single quotes in the path
+* BUG: Fixed many bugs with 1 directory mode
+* BUG: Fixed an issue with Playlist display
+* CHG: Simplified the installer to help make installations easier :-)
+* CHG: Now the english language file is loaded first, so if there are missing translations something will still show
+* CHG: Removed the Play Album and Change Art links below the album art (I think this looked bad)
+* CHG: Now you have the option of disabling automatic lyrics searching
+* CHG: Change the size of the default album art from 100x100 to 200x200
+* CHG: Now in Jukebox mode while at the "login" screen the hotkeys are disabled
+* CHG: Moved the search function to a seperate menu in Album mode, added Echo
+
+Jinzora 0.9.5 (2.27.04)
+
+* SEC: Big Security Fix! Added MD5 hashing to all passwords, thanks Joe!
+* NEW: HUGE ADDITION!!! We've added a new "caching" system to cache all track information for up to 500% faster display of data!!!
+* NEW: Big Addition! Now when writing ID3 tags IF the album art and lyrics are found they are written to the files!
+* NEW: Big Addition! Added support for the Mambo CMS! Beta so far, but it works great for me!!!
+* NEW: Big Addition! Added track play counting, now Jinzora can track how many times a track has been added to a playlist
+* NEW: Big Addition! Added a track "discussion" system - now users can enter personal comments about any track in Jinzora!
+* NEW: Big Addition! Added a star based track rating system!!! Now users can rate tracks from 0-5 stars!
+* NEW: Big Addition! Added a "Suggestion" system based on the user ratings!!!
+* NEW: Big Addition! You can now have Jinzora point out newly (user definable) discovered content
+* NEW: Big Addition! You can now display the top X most played tracks within the system
+* NEW: Big Addition! There is now a Jinzora RSS Newsfeed (2 of them) for most played and highest rated tracks!
+* NEW: Big Addition! I've added a new menu system (thanks Mambo) for playing and managing media on the tracks page
+* NEW: Big Addition! Jinzora now has a full server side Jukebox feature! Play media directly on the server - fully supported in Linux & Windows! - please see the help for details
+* NEW: Cool Addition! In Jukebox mode Jinzora will display the album art of the current playing track, if available
+* NEW: You can now upload album and artist images using the web form instead of the filesystem
+* NEW: You can now add .fake.lnk tracks to have Jinzora link to an outside site. Please see help for details
+* NEW: You can now updated ID3 tags on a per album basis (if logged in as admin)
+* NEW: You can now rate and comment on Genres/Artists/Albums as well as songs...
+* NEW: Added 2 new themes - Sandstone and Bluesteel - let me know if you hate them...
+* NEW: Added a Portuguese (Brazilian) translation - Thanks to Cherem!
+* NEW: Added a Bulgarian translation - Thanks to Martin!
+* NEW: Some minor tweaks to the themes for IE (since I only use <a href="http://www.mozilla.org/firebird">Firebird</a> now...)
+* NEW: You can now turn off the display of track bitrate, frequency, filesize and lenght, all individually
+* NEW: You can now disabled right mouse clicks to help protect your content (but we think this is bad)
+* BUG: Fixed an issue with special characters in some playlists
+* BUG: Fixed the user manager in PHP/NSNNuke modes
+* CHG: I'm not NOT including all the themes with the distrubution to slim it down. I'll be including "Sandstone" and the cms-theme (the others will be in downloads)
+* CHG: I'm not NOT including the Shoutcast files with the distrubution, and will post them on the downloads page
+* CHG: Now when dispalying new items, it will tell you "New from last Wednesday" etc.
+* CHG: The popup windows now read the current theme
+* CHG: Usernames are not non-case sensitive
+* CHG: Big Changes! I changed a lot of the way that CMS integration works to support more CMSes - could be buggy, please let me know
+* CHG: Removed the old class I was using to read/write ID3 tags, now using getID3 only
+* CHG: Now when you change themes on the fly Jinzora will keep you on the page you were on, as it should...
+* CHG: Changed the icons for the track rating system - thanks Frank!
+* CHG: Changed the icons for Postnuke and added a better discussion icon - thanks again to Frank!
+* BUG: Changed the sort of the themes in the drop down box (if enabled) to alphabetical
+
+Jinzora 0.9.4 (12.22.03)
+
+* NEW: Big Addition! Added the ability to have a default CMS user level.
+  So if a user is logged into your CMS you can grant rights based on just that, not on a per user basis (or both)
+* NEW: Big Addition! When viewing the info for a track, Jinzora will automatically search for and return lyrics (if found) from www.leoslyrics.com!!!
+* NEW: You can now edit all the description files using the info popup pages
+* NEW: Made a bunch of updates to the installer - much nicer and now multi-lingual!
+* NEW: I'm adding a description file editor. So you'll be able (if admin) to edit all the descriptive text everywhere from a web page
+* NEW: Now when viewing tracks if downloads are enabled it will tell you the size of the files in the album
+* NEW: Added Lyrics searching. Now when viewing the info page for a track you can click a link and search Leo's Lyrics
+* NEW: Added some sample theme images to the installer so you can get an idea of what to expect...
+* NEW: Jinzora will now write ID3v2 tags as well as ID3v1...
+* CHG: Changed the way getID3 reads file data, am now using the more aggressive scan method to ensure results everytime
+* CHG: Now a filename.txt file (track description) will over-ride the ID3 comment field on display
+* CHG: Added better support for media that is found out of place...
+* CHG: Change the way sub albums display when found out of where they are expected
+* BUG: Sometime the sub counter numbers would be off, fixed...
+* BUG: Searching now works in any directory structure
+* BUG: HUGE BUG! Fixed a big bug with IE and Windows Media Player and playlist, should be working fine now...
+* BUG: Fixed an issue with the installer and footer drop down for themes, they shouldn't show the images directory
+* BUG: Fixed several issues with downloads and zip files, should be much better now...
+* BUG: Fixed an issue with playback of video files - oops, sorry :-)
+
+Jinzora 0.9.3 (12.9.03)
+
+* SEC: Big Security Fix! Changed access level from Cookie to a session variable - Thanks very much Sean!!!
+* NEW: Big Addition! Added the ability for Jinzora to automatically search for album art when viewing an artist (can be disabled, it is kinda slow...)
+* NEW: Big Addition! Added a tool to list all missing album art to allow for MUCH faster searching for many covers
+* NEW: Big Addition! Added #EXTM3U playlist format, playlists are MUCH prettier now (only supported by Winamp I think...)
+* NEW: Big Addition! Made user authenication use Postnuke/PHPNuke user database! In PHP/Postnuke mode there is a new user manager!
+* NEW: Big Addition! Also a standalone user manager!
+* NEW: Big Addition! Added support for reading info (name, bitrate, etc) from the following file types:
+  aac,ape,asf,au,avr,bonk,flac,id3v1,id3v2,la,lpac,lyrics3,matroska
+  midi,mod,monkey,mp3,mpc,mpeg,nsv,ogg,ogginfo,optimfrog,quicktime
+  real,rgad,riff,swf,voc,vqf
+* NEW: Big Addition! Addition of a full help system. While it's not the end all - be all of help systems, it's much better than most!
+* NEW: Big Addition! Now when viewing a folder, if it has no subfolder Jinzora assumes its an album and displays it as such!
+* NEW: Big Addition! Added a new "file" caching system, you can now cache to local files to make everything MUCH faster - please see online docs for details
+* NEW: Big Change! Added caching functionallity to Jinzora. Now all header information is read only once then reused, MUCH faster!
+* NEW: Added a new "Random Album" image item to the Artist page. When in Genre/Artist/Album mode and viewing a specific Genre random album art from that Genre will show (if you want)
+* NEW: Added the ability to put images on the Genre/Artist pages for each item. Just create an image with the EXACT same name of the folder, at the same level of the folder
+* NEW: Added a new layout design on the Genre page (the page that lists the contents of a Genre) adding a picture and text at the top of the page
+* NEW: Added the ability to NOT keep the porportions on images when Jinzora does the resizing. This is OFF by default
+* NEW: Added the ability to hide the ID3 comment field when displaying tracks (if you don't want to see it)
+* NEW: Added the ability to force the size of pictures on the tracks page WITHOUT actually resizing the images
+* NEW: Updated the search results page for easier displaying...
+* NEW: Added the ability to more easily embed Jinzora in an existing website (please see the documentation section for more details)
+* NEW: Added a field next to Genres and/or Artists to show the number of sub items - off by default
+* NEW: Added a "remember me" box at login. Basically write a 365 day cookie
+* NEW: Added the ability to "Exclude" Genres/Artists from view, per user (by clicking the "More" icon)
+* NEW: Added the ability to "Show Hidden" and remove the exclude list from above
+* NEW: Added a "Power User" that can view, play, and download music
+* NEW: Added the ability to download single tracks as MP3's instead as Zips (requested)
+* NEW: Added a "Fake Track" display. If you create a file called "XXXXXXX.fake.txt" it will be displayed and it's contents will be the description (requested)
+* NEW: Added a "Survey" link to the tools page, yeah, I know, but we just want to know more so we can make Jinzora better!!!
+* NEW: Addition of Arabic language file (thanks Dooby)
+* NEW: When searching it will give you the search term and number of matches in the header
+* NEW: You can now specify a username:password to be prepended to URLs for playlist generation (for secured sites)
+* NEW: Added a drop down box in the header for Tracks. Displays an alpha list of ALL tracks in Jinzora (can be PAINFULLY slow on big sites) (requested)
+* NEW: Added a "Play Playlist" link on the playlist page. You can grab the URL and send a playlist to anyone (without them having any access to Jinzora)
+* BUG: Fixed a issue when displaying files where the TAG information is blank (file name will be displayed, minus the extension and track number)
+* BUG: Moving artists and renaming albums now works (thanks for all the help Will!)
+* BUG: Fixed Jinzora through SSL. Now if in SSL it will stay in SSL and playlists will be SSL
+* BUG: Fixed a bug where if there was more than one image in a album they would all be shown, now only the first one gets shown
+* BUG: Made the "Tools" link show in PHPNuke mode - sorry guys...
+* BUG: Fixed some issues with directory caching in 2 directory mode
+* BUG: Fixed an issue with the lyrics file link and updated the display of this (now opens a popup window, am I evil?)
+* BUG: Removed a few final areas that a view only user could use to play music - no music for you!
+* BUG: Made lots of updates to the installer, hopefully this will help those of you with issues out!
+* BUG: Fixed some issues with album art resizing leaving old file names around...
+* BUG: Fixed a caching issue with Album art. Now when new art is downloaded it will display right the first time it's viewed
+* BUG: Minor changes to the Postnuke/PHPNuke stylesheet
+* BUG: Fixed an issue when trying to view " - New Playlist - " which obviously doesn't exist!
+* CHG: Now when you click on an album cover it takes you to the album instead of playing it, you can click "Play Album" below to play it
+* CHG: I cut down the sample track that is included from 4.5MB to 500k for smaller downloads
+* CHG: Made the search functionality use the session cache information, MUCH faster!!!
+* CHG: Removed the "Jinzora is not secure, please...." message in the footer, was just causing too many problems...
+* CHG: Removed the secure.sh script, it was just casuing too many issues...
+* CHG: Removed the "Login" link if you're logged in, only show "Logout" if you are logged in
+* CHG: Prettied up the installer a good bit...
+* CHG: You can once again access the "Tools" page directly from Jinzora without the Postnuke admin page
+
+Jinzora 0.9.2 (10.19.03) (use auto-update in 0.9 and higher to upgrade to)
+
+* BUG: Several people reported bugs with the login module, sorry, they've been fixed!
+* BUG: Fixed a bug with view only mode, users could play tracks by clicking on the album art, thanks for seeing this Goran!
+
+Jinzora 0.9.1 (10.17.03) (use auto-update in 0.9 and higher to upgrade to)
+
+* SEC: Now only admins can edith the ID3 tag info when view a single file
+* NEW: Big Addition! Added initial support for Shoutcasting! Use Jinzora as a front end to a Shoutcast server (full documentation coming soon)
+* NEW: Big Addition! Redisgned the "tools" page and created a Postnuke Admin page!
+* NEW: Added the ability to randomize server stored playlists
+* NEW: Updated the Postnuke Block with information from the Shoutcasting server, when in Shoutcast mode
+* NEW: Added initial support for PHPNuke. Very beta, but seems to work ok for me. I don't use PHPNuke basically at all, so feedback is much apprecaited
+* NEW: Added an info button when viewing albums that allows for renaming, moving, and deleting of an album
+* NEW: Added the ability to change the actual file name when viewing it in the info popup screen
+* NEW: Added "Check All | None" to the playlist editor when viewing albums for an artist
+* NEW: You can now specify a Jinzora theme even when running in Postnuke mode
+* NEW: When creating a new Genre you get a select box of all the ID3v1 Genres (a little limitting, but safer...)
+* BUG: When viewing a playlist the playlist select box now defaults to the playlist you're currently viewing
+* BUG: Resolved a problem with deleting individual items ablums from a playlist that were added as a album, not tracks
+* BUG: Fixed an issue with displaying playlists in Postnuke mode
+* BUG: Fixed an issue with configure.sh and secure.sh (CVS screwed them up for me, nice!)
+* BUG: Fixed an issue with Postnuke and the ID3 info popup window
+* BUG: Fixed an issue with auto-updating and Postnuke installs
+* BUG: Fixes some problems when using Jinzora in 1 directory mode (Album/Tracks)
+* CHG: Removed the "Tools" link when in Postnuke mode, instead it is in the Postnuke Administration screen
+
+Jinzora 0.9 (10.07.03)
+
+* NEW: HUGE ADDITION! Jinzora can now search for and download album art for your albums!!! Very new but working well so far!
+* NEW: Big Addition Added the ability to display tracks wherever they are found. If there are tracks in the folder you're looking at they will be displayed!
+* NEW: Big Addition Added the ability to view the full ID3 details on a track, and Edit them individually!!! Nice work Frank!!!
+* NEW: Added a "1-Click Install" process. If Jinzora can verify everything up front, it will install with 1 click!!!
+* NEW: Added the ability to view the ID3 track name when viewing tracks instead of the filename (if the ID3 Name field isn't blank)
+* NEW: The above change can be turned off, and is only visible by administrators
+* NEW: Added the ability to easily delete individual tracks (admins only - includes confirmation of deletion)
+* NEW: Tweaks to existing themes, and addition of a new on, Puddles (thanks again to Frank!)
+* NEW: Added a "Check for updates" tool on the admin page. Easily looks at the main Jinzora site to see if there are updates ready
+* NEW: Added a "Info" link next to tracks. Opens a popup window with all the ID3 info from the track (edit ability will come soon - nice work Frank!)
+* NEW: Added a "Search AMG" link when viewing an album. Can be disabled during install or in settings.php
+* CHG: When viewing an artist where the albums have no album art the entire area can be used to display the album names
+* CHG: Moved all icon definitions to a seperate file, added height/width definitions to each (thanks Frank!)
+* CHG: Changed a bunch of while loops to for loops to speed things up a bit
+* CHG: Now when viewing an artists that doesn't have sub-albums it just displays the tracks only
+* BUG: BIG BUG! Fixed lots of issues with special characters in file or directory name, should be gone now
+* BUG: Fixed an issue with Jinzora and IE/Safari (forgot to close a script tag, sorry!!!
+* BUG: BIG BUG!!! Fixed an issue with an error in display.php on about link 824. Haven't released this yet, if you're having this error I'll get you the fix!
+* BUG: Fixed an issue with the playlists coming out in a non-standard order (added a sort to match the display of tracks)
+* BUG: Fixed some small bugs with admin/user level access (hiding downloading/moving items)
+* BUG: Fixed an issue where the album names get squeezed together when NOT displaying other, random album art
+* BUG: Fixed the bug when trying to stream just one file (where it was downloading instead of streaming)
+* BUG: Fixed an issue with Creating/Deleting genres on the Tools page (thanks Jesse for finding this one)
+
+Jinzora 0.8.2 (9.28.03)
+
+* NEW: Added the ability to selectively turn off the different drop downs in the headers
+* BUG: Fixed a really big bug with the installer and new installs. All should be fine now, sorry!!!
+* BUG: Fixed a bug when reading really big directory structures
+
+Jinzora 0.8.1 (9.26.03)
+
+* BUG: Oops, released with a small bug in the installer and mising the newly update themes, sorry!
+
+Jinzora 0.8 (9.25.03)
+
+* NEW: HUGE CHANGE! Changed the way ID3 tags are written, now using a PHP class instead of command line, literally 1500% faster!
+* NEW: Big changes to the style sheet/theme stuff (many thanks to Frank for his help with this). Updates to darklites theme (hopefully the rest soon!)
+* NEW: Added Traditional Chinese Language File (thanks Wi Treble Seven!)
+* NEW: Removed the ability to write ID3v2 tags (anyone using this let me know and I'll work on adding it back)
+* NEW: Added the ability to sort albums by year when viewing an artist (if the info is available in the ID3v1 tag in the files)
+* NEW: Will start releasing Jinzora as a tar.gz file and a .zip file
+* NEW: Will release 2 versions, one with sample files, one without (for upgrading)
+* NEW: Added links to the play and download icons on the tracks page
+* NEW: Added a small favicon.ico file for use with Jinzora is in standalone mode
+* NEW: Added VERY small, initial full support as a ?PostNuke module (so it can be registered and use ?PostNuke's user database)
+* NEW: Added random album art from the same artist when viewing an album, you can set how many albums will show here (or 0 to turn it off)
+* BUG: Fixed some issues with special characters in Directory/Track names (please let me know if you see any more)
+* BUG: Finally really fixed an issue with track-name seperators (thanks again Frank!)
+* BUG: Removed the theme change on-the-fly drop down if using as ?PostNuke (since it would be invalid anyway)
+* BUG: Fixed a type with the name of a array (damned keyboard...), thanks M@
+* BUG: Fixed a big bug with playlist creation on IE (it needs different info in the header, go IE, go!)
+* BUG: Fixed a bug when playing all songs from an artist, it was tripling them!
+* CHG: Moved all the different functions out to different files to make it easier on me
+
+Jinzora 0.7 (9.22.03)
+
+* NEW: Added the ability to change the theme on the fly (default is disabled)
+* BUG: Fixed a bug in the web-installer - Skin should be ?JavaScript (oops!)
+
+Jinzora 0.7 (9.22.03)
+
+* NEW: Changed the layout of the Artist page - moved the album covers (if available) to the right cell
+* NEW: Added initial support for Artist/Album/Track directory structure. You can choose either in setup
+* NEW: Added some new stuff to the install, mainly some new shell scripts (*NIX) to help with install issues
+* NEW: Added 6 new themes and changed the default theme to Darklites - Thanks a MILLION Frank!!!
+* NEW: Added the ability to change the file type of the playlists that are generated
+* NEW: If the playlist type is HTML Jinzora will generate a page of links and track names instead of a standard playlist
+* NEW: Changed the links to the individual tracks, instead of generating a playlist with the single track I just link to the track directly
+* NEW: Added Swedish Language file - Thanks to Göran for this one!
+* NEW: Added the ability to specify multiple track number/name seperators (please seperate with |)
+* NEW: Added the ability to turn off ?JavaScript (will do an autodetect in the future)
+* BUG: Fixed an issue with on-the-fly changing of the language file (it works now...)
+* BUG: Fixed some words that we not reading from the language files
+* BUG: Fixed a bug with track name seperation - Thanks Frank
+* BUG: Fixed a bug with the auto-zipping of files for Download (again...) - Thanks to M@ for finding this one!
+* BUG: Fixed a bug with random play list creation of "Albums" (in the header)
+* BUG: Fixed a small bug with the configre/secure install scripts
+
+Jinzora 0.6.2 (9.19.03)
+
+* NEW: Added inital support for Windows/IIS - So far so good...
+* NEW: Added the ability to change languages on the fly (disabled by default)
+* NEW: Finished the random playlist generator in the header (the drop downs to the right) - sorry, didn't mean to include them before!
+* NEW: Added "upgrade" ability to the web-based installer, very seamless upgrades!
+* BUG: Fixed the displaying of track names not reading the track seperator value - Thanks Frank!
+* BUG: More minor tweaks to the style-sheet
+* BUG: Fixed a bug with playback of streaming video files (at least I think...)
+* BUG: Fixed a bug with the removal of the file extensions when viewing tracks - Thanks Eric!
+
+Jinzora 0.5 (9.18.03)
+
+* SEC: Fixed a security hole what would allow a non-admin user to access the tools page
+* NEW: Full, web-based installer. Get Jinzora up and running VERY VERY FAST!!!
+* NEW: Enter the installer from the "Tools" section
+* NEW: Added inital support for video files. Should be able to play anything that can stream HTTP
+* NEW: Added "up" browsing when viewing an Artist or Albums (easy way to go up one or multiple levels)
+* BUG: Fixed a bug with the auto-unzipping of uploaded zip files
+* BUG: Fixed a problem reading directories that are really symlinks - Thanks to Frank for finding this one!
+* BUG: Fixed a minor display problem when there is only one Artist per Genre (cleaned up the spacing...)
+* BUG: Fixed a very minor bug in the Jinzora-?PostNuke stylesheet
+* BUG: Fixed a bug with the auo-zipping and downloading of albums/songs (oops!)
+* BUG: Fixed a small bug with the standalone stylesheet
+
+Jinzora 0.4 (9.16.03)
+
+* NEW: Added full, multi-lingual support. Included language files for Spanish, French, German, and Dutch
+* NEW: Ability to create custom language files to change the wording anywhere in the application
+* NEW: Minor changes to the display of album art (if it exists)
+* NEW: Added descriptive text to every level of the application - Genre/Artist/Album/Song
+* NEW: Added linking to lyrics files for individual songs (if they exist)
+* NEW: Added initial support for skins
+* NEW: Added user management module - 4 levels of access for multi-user functionality
+* BUG: Truly fixed the issues with include paths - Thanks to Kaliay for the help!
+* BUG: Several other small, display related bugs
+* BUG: Fixed issue when trying to display album/artist art that doesn't exist
+* BUG: Fixed major issues when using Jinzora in standalone mode - consolidated the style sheets and variables
+
+Jinzora 0.3.1 (9.14.03)
+
+* Fixed a bug with the include paths that was affecting a number of people
+  For now you'll need to edit index.php to put in the right path statment (the app will remind you to do this)
+* <b>THIS IS A TEMPORARY FIX!!!</b>
+
+Jinzora 0.3 (8.22.03)
+
+* Fixed some minor bugs with the iPod - ephPod sync (directory size was reporting incorrectly)
+* Added a fully functional upload center - gives users the ability to upload a single ZIP file containting all the music they'd like to add. The user chooses a Genre, specifies the Artist and Album and if they do not exists they are created on the fly. Then if they user uploaded a ZIP file it is extracted into the new directory structure. NOTE: Make sure the PHP upload limit is set high enough for the files that you'll be uploading and that the user that the webserver is running as has permissions to the filesystem
+
+Jinzora 0.3pre2 (8.21.03)
+
+* Added iPod/ephPod sync system - allows users to select which artists to sync to their iPod using ephPod
+
+Jinzora 0.3pre (8.20.03)
+
+* Fixed several minor bugs
+* Added ability to create on the fly, random playlists from Genre, Artist, or Album from anywhere in the site
+* Added ID3 Tag Update Tools
+* Added full search ability. Search all folder/file names from the home page
+* Added the ability to easily move Artists to new Genres
+
+Jinzora 0.2 (8.18.03)
+
+* First release of Jinzora after ground up rewrite. New features are:
+* Drop down lists for Genre, Artist, Album in the header
+* Ability to download albums or single songs as a single zip file (to make it easier)
+* Ability to play entire Genre, Artist, Album with a single click
+
+Jinzora 0.1.1
+
+* Original release of forked Zina code, with my additions

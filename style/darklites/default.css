@@ -1,0 +1,481 @@
+/* This affects just about everything... */
+body {
+	background: #000000 url(jinzorabg.gif) right;
+	margin-top: 5px;
+	margin-left: 5px;
+	font-family: Verdana;
+	font-size: 12px;
+	color: #9C9C9C;
+}
+
+/* This is for The forms */
+form { 
+	display:inline; 
+}
+.jz_sm_font {
+	font-size: 10px;
+}
+/* This is for The link color */
+a {
+	text-decoration: none;
+	font-size: 12px;
+}
+a:link { 
+	color: #FDCD00;
+}
+a:visited { 
+	color: #FDCD00;
+}
+a:hover {
+	text-decoration: underline;
+}
+/* This is The style for all checkboxes */
+.jz_checkbox {
+
+}
+/* This is The style for all select boxes */
+.jz_select {
+	border: 1px solid #828282;
+	background: #1A1A1A;
+	color: #FDCD00;
+	font-size: 11px;
+}
+/* This is for the number drop down in the quick generate random */
+.jz_select_sm1 {
+	border: 1px solid #828282;
+	background: #1A1A1A;
+	color: #FDCD00;
+	font-size: 11px;
+	width: 40px;
+}
+/* This is for the type drop down in the quick generate random */
+.jz_select_sm2 {
+	border: 1px solid #828282;
+	background: #1A1A1A;
+	color: #FDCD00;
+	font-size: 11px;
+	width: 70px;
+}
+/* This is The style for all submit buttons */
+.jz_submit {
+	border: 1px solid black;
+	background: #BFBFBF;
+	color: black;
+	font-size: 11px;
+}
+/* This is The style for all input boxes */
+.jz_input {
+	border: 1px solid #828282;
+	color: #FDCD00;
+	background-color: black;
+	font-size: 11px;
+}
+/* This The The style for The main table in The header */
+.jz_header_table {
+	border-collapse: collapse;
+}
+/* This is The style for The header rows */
+.jz_header_table_tr {
+}
+
+.jz_header_table_outer {
+	font-size: 16px;
+	color: #FFFFFF;
+	background-color: #4A4A4A;
+	border: 1px solid black;
+	padding:10px;
+	margin-top:10px;
+	border-collapse: collapse;
+}
+
+/* This is The style for The header columns */
+.jz_header_table_td {
+	color: #FFFFFF;
+	font-size: 11px;
+}
+/* This is The style of The links in The header */
+.jz_header_table_href:link {
+
+}
+/* This is the style for the text of the Genre/Artist/Album in the top left of the header */
+.jz_headerTitle {
+	font-size: 14px;
+	font-weight: bold;
+}
+/* This is the main table in the footer */
+.jz_footer_table {
+	text-decoration: none;
+	font-size: 11px;
+	color: #FFFFFF;	
+	background-color: #4A4A4A;
+	margin-top: 10px;
+}
+.jz_footer_table_td {
+}
+.jz_row1 { background-color:#4A4A4A; }
+.jz_row2 { background-color:#666666; }
+/* This is The main table style for The colum style pages (like Genre or Artist) */
+.jz_col_table_main {
+}
+/* This is the inter tables where the colums are actually displayed */
+.jz_col_table {
+	height: 25px;
+	border-right: 1px dotted #666666;
+}
+/* This is The table rows in The main colum style pages (like Genre or Artist) */
+.jz_col_table_tr {
+	font-size: 12px;
+}
+/* This is The table details in The main colum style pages (like Genre or Artist) */
+.jz_col_table_td {
+
+}
+/* This is The links in The main colum style pages (like Genre or Artist) */
+.jz_col_table_href {
+
+}
+/* This is The main table style when viewing The artists page (one above The album) */
+.jz_artist_table {
+	font-size: 12px;
+	color: #FFFFFF;
+}
+/* This is The row style when viewing The artists page (one above The album) */
+.jz_artist_table_tr {
+
+}
+/* This is The table detail when viewing The artists page (one above The album) */
+.jz_artist_table_td {
+	font-size: 12px;
+}
+/* This is The links in The main colum style pages (like Genre or Artist) */
+.jz_artist_table_href {
+
+}
+/* This is for The main table That holds The album covers */
+.jz_album_cover_table {
+}
+/* This is The rows in The table That holds The album covers */
+.jz_album_cover_table_tr {
+
+}
+/* This is The columns in The album cover table */
+.jz_album_cover_table_td {
+
+}
+/* This is The links on The names of The albums in The album cover table */
+.jz_album_cover_table_href {
+	font-size: 11px;
+	line-height: 150%;
+}
+.jz_track_album_table {
+	background: url(jinzora.gif) right no-repeat;
+}
+
+.jz_track_album_table_td {
+	font-size: 12px;
+}
+
+/* This is The style for The table That holds all The tracks */
+.jz_track_table {
+	font-size: 12px;
+	color: #FFFFFF;
+}
+/* This is The row for The table That holds all The tracks */
+.jz_track_table_tr {
+}
+/* This is The colum for The table That holds all The tracks */
+.jz_track_table_td {
+}
+/* This is The link for The items above The tracks */
+.jz_track_table_href {
+}
+
+/* These are The colums where The actual tracks are displayed */
+.jz_track_table_songs_tr {
+
+}
+
+/* These are The colums where The actual tracks are displayed */
+.jz_track_table_songs_td {
+	border-top: 1px solid black;
+	color: white;
+}
+/* This is for The actually links on The tracks Themselves */
+.jz_track_table_songs_href {
+	color: #FDCD00;
+}
+
+/* This is the style around the ablum covers themselves */
+.jz_album_cover_picture {
+	border: 1px solid #666666;
+ }
+ 
+ 
+
+
+
+/* These are the important items for the menu */
+/* This one should be the same as the page jz_header_table_outer background color */
+.jzMenuItemHover,.jzMenuItemActive{
+	background-color:	#4A4A4A;
+}
+/* This should be the same as the page backgound */
+.jzMenuItem{
+	background-color:	#000000;
+}
+/* This one should be the same as the page jz_header_table_outer background color */
+.jzMenuItem .jzMenuFolderLeft,
+.jzMenuItem .jzMenuItemLeft{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	2px;
+	padding-right:	3px;
+
+	white-space:	nowrap;
+
+	border:		0;
+	background-color:	#4A4A4A;
+}
+/* This one should be the same as the page jz_header_table_outer background color */
+.jzMainItemHover,.jzMainItemActive
+{
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+   font-size: 11px;
+	background-color:	#4A4A4A;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ /* jzMenu Style Sheet */
+
+.jzMenu,.jzSubMenuTable
+{
+	font-family:	Arial, sans-serif;
+	font-size:	11px;
+
+	padding:	0;
+
+	white-space:	nowrap;
+	cursor:		default;
+}
+
+.jzSubMenu
+{
+	position:	absolute;
+	visibility:	hidden;
+
+	/*
+	   Netscape/Mozilla renders borders by increasing
+	   their z-index.  The following line is necessary
+	   to cover any borders underneath
+	*/
+	z-index:	100;
+	border:		0;
+	padding:	0;
+
+	overflow:	visible;
+	border:		1px solid #8C867B;
+
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#BDC3BD, Direction=135, Strength=4);
+}
+
+.jzSubMenuTable
+{
+	overflow:	visible;
+}
+
+.jzMainItem,.jzMainItemHover,.jzMainItemActive,
+.jzMenuItem,.jzMenuItemHover,.jzMenuItemActive
+{
+	border:		0;
+	cursor:		default;
+	white-space:	nowrap;
+}
+
+.jzMainItem
+{
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+}
+
+
+/* horizontal main menu */
+
+.jzMainItem
+{
+	padding:	4px;
+	border:		0;
+}
+
+td.jzMainItemHover,td.jzMainItemActive
+{
+	padding:	4px;
+	border:		0px solid #808080;
+}
+
+.jzMainFolderLeft,.jzMainItemLeft,
+.jzMainFolderText,.jzMainItemText,
+.jzMainFolderRight,.jzMainItemRight
+{
+	background-color:	inherit;
+}
+
+/* vertical main menu sub components */
+
+td.jzMainFolderLeft,td.jzMainItemLeft
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	0px;
+	padding-right:	2px;
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+	border-left:	1px solid #3169C6;
+	background-color:	inherit;
+}
+
+td.jzMainFolderText,td.jzMainItemText
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	5px;
+	padding-right:	5px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+
+	background-color:	inherit;
+	white-space:	nowrap;
+}
+
+td.jzMainFolderRight,td.jzMainItemRight
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	0px;
+	padding-right:	0px;
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+	border-right:	1px solid #3169C6;
+	background-color:	inherit;
+}
+
+tr.jzMainItem td.jzMainFolderLeft,
+tr.jzMainItem td.jzMainItemLeft
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	1px;
+	padding-right:	2px;
+
+	white-space:	nowrap;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+tr.jzMainItem td.jzMainFolderText,
+tr.jzMainItem td.jzMainItemText
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	5px;
+	padding-right:	5px;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+tr.jzMainItem td.jzMainItemRight,
+tr.jzMainItem td.jzMainFolderRight
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	0px;
+	padding-right:	1px;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+/* sub menu sub components */
+
+.jzMenuFolderLeft,.jzMenuItemLeft
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	1px;
+	padding-right:	3px;
+	border-top:	1px solid #d5d5d5;
+	border-bottom:	1px solid #d5d5d5;
+	border-left:	1px solid #d5d5d5;
+	background-color:	inherit;
+	white-space:	nowrap;
+}
+
+.jzMenuFolderText,.jzMenuItemText
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	5px;
+	padding-right:	5px;
+	border-top:	1px solid #d5d5d5;
+	border-bottom:	1px solid #d5d5d5;
+	background-color:	inherit;
+	white-space:	nowrap;
+}
+
+.jzMenuFolderRight,.jzMenuItemRight
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	0px;
+	padding-right:	0px;
+	border-top:	1px solid #d5d5d5;
+	border-bottom:	1px solid #d5d5d5;
+	border-right:	1px solid #d5d5d5;
+	background-color:	inherit;
+	white-space:	nowrap;
+}
+
+
+
+.jzMenuItem .jzMenuFolderText,
+.jzMenuItem .jzMenuItemText
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	5px;
+	padding-right:	5px;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+.jzMenuItem .jzMenuFolderRight,
+.jzMenuItem .jzMenuItemRight
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	0px;
+	padding-right:	1px;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+/* menu splits */
+
+.jzMenuSplit
+{
+	margin:		2px;
+	height:		1px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-top:	1px solid #C6C3BD;
+}
